@@ -16,3 +16,10 @@ var LibraryEntryView = Backbone.View.extend({
   }
 
 });
+
+
+      // console.log('this: ------')
+      // console.log(this);
+      // console.log('this.model: ------')
+      // console.log(this.model)
+      // console.log(this.model.cid);
