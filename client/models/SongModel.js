@@ -5,10 +5,10 @@ var SongModel = Backbone.Model.extend({
   },
   play: function(){
     // Triggering an event here will also trigger the event on the collection
+    // This song's songModel is listening for a 'play' event happening in LibraryEntryView
     this.trigger('play', this);
   },
   enqueue: function() {   
-    app.get('songQueue').add(this);
     this.trigger('enqueue', this);
   },
   dequeue: function() {
